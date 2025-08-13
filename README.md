@@ -2,12 +2,12 @@
 
 This repository contains two Python scripts for working with VCF files:
 
-1. **Script 1**: Extracts variants that are present only in a given list of genome IDs from a VCF file.
-2. **Script 2**: Matches a set of variants (from Script 1's output table) against one or more VCF files and calculates, **for each genome**, the percentage of these variants that are found.
+1. **select_specific_genotype.py**: Extracts variants that are present only in a given list of genome IDs from a VCF file.
+2. **find_markers_from_tab.py**: Matches a set of variants (from select_specific_genotype.py's output table) against one or more VCF files and calculates, **for each genome**, the percentage of these variants that are found.
 
 ---
 
-## 1. Script 1 — Select Specific Variants from VCF
+## 1. Select Specific Variants from VCF
 
 **File:** `select_specific_genotype.py`
 
@@ -66,9 +66,9 @@ chr1    400     C   T   T
 
 ---
 
-## 2. Script 2 — Search Variants in VCF Files
+## 2. Search Variants in VCF Files
 
-**File:** `find_snps_from_tab.py`
+**File:** `find_markers_from_tab.py`
 
 ### Description
 This script takes:
@@ -150,3 +150,6 @@ python find_snps_from_tab.py -i sample.vcf -t variants.tab
 ```bash
 python find_snps_from_tab.py -i multi_sample.vcf -t variants.tab -m
 ```
+
+## Citation
+coming soon
