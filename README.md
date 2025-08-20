@@ -1,6 +1,6 @@
 # VCF Variant Selection and Matching Scripts
 
-This repository contains two Python scripts for working with VCF files:
+This repository contains two Python scripts to proccess VCF files:
 
 1. **select_specific_genotype.py**: Extracts variants that are present only in a given list of genome IDs from a VCF file.
 2. **find_markers_from_tab.py**: Matches a set of variants (from select_specific_genotype.py's output table) against one or more VCF files and calculates, **for each genome**, the percentage of these variants that are found.
